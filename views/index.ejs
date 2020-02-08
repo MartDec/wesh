@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Martin Déclert - Développeur web Back-end</title>
+    <link rel="stylesheet" href="skin/style/style.css">
+</head>
+
+<body>
+    <header>
+        <%- include('header') -%>
+    </header>
+    <main>
+        <%- include(content) -%>
+    </main>
+    <footer>
+        <%- include('footer') -%>
+    </footer>
+    <script>
+        const header = document.querySelector('header');
+
+        const scrollAnimations = (elt, coef) => {
+            elt.style.backgroundPositionY = 'calc(50% - ' + (scrollTop / coef) + 'px)';
+        }
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset;
+            header.style.backgroundPositionY = 'calc(50% - ' + (scrollTop / 4) + 'px)';
+            document.querySelector('.background-color').style.opacity = scrollTop / 900;
+        });
+    </script>
+</body>
+
+</html>

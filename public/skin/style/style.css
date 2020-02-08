@@ -1,0 +1,277 @@
+/**
+	FONTS IMPORT
+ */
+@import url("https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro&display=swap");
+@import url("https://css.gg/c?=|server|template|terminal");
+/**
+	VARIABLES
+ */
+/**
+	ATOMS IMPORT
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+body {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: "Source Code Pro";
+}
+
+a {
+  color: #07678D;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  background-image: url("http://192.168.0.11:8080/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header * {
+  color: white;
+  z-index: 1;
+}
+header .background-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  background: black;
+  opacity: 0;
+  margin-top: 0;
+  z-index: 0;
+}
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+header h1 span {
+  font-weight: 700;
+}
+header h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+header div {
+  margin-top: 3.5rem;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div a {
+  border: solid 1px rgba(255, 255, 255, 0);
+  transition: border-color 0.5s ease;
+  border-radius: 24px;
+  text-decoration: none;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div a:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+header div a svg {
+  height: 24px;
+  width: 24px;
+}
+header div .separator {
+  height: 1px;
+  width: 125px;
+  background: white;
+}
+header #round-vector {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+}
+@media all and (max-width: 990px) {
+  header #round-vector {
+    display: none;
+  }
+}
+@media all and (max-width: 465px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+main article {
+  margin-top: 4rem;
+}
+main article h2 {
+  margin-bottom: 1.5rem;
+}
+main #introduction p {
+  max-width: 800px;
+}
+main #skills #skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+main #skills #skills-wrapper section {
+  width: 33%;
+  background: #ccc;
+  border-radius: 12px;
+  padding: 2rem;
+  padding-top: 4.5rem;
+  text-align: center;
+  position: relative;
+}
+main #skills #skills-wrapper section:nth-child(2) {
+  margin: 0 1rem;
+}
+main #skills #skills-wrapper section .techno-type {
+  height: 5.5rem;
+  width: 9.5rem;
+  background: white;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #skills #skills-wrapper section .techno-type div {
+  height: 4rem;
+  width: 8rem;
+  background: #07678D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 7px 7px 30px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 7px 7px 30px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 7px 7px 30px 0px rgba(50, 50, 50, 0.5);
+}
+main #skills #skills-wrapper section .techno-type div span {
+  color: #fff;
+  font-weight: 400;
+  --ggs: 1.5 ;
+}
+main #skills #skills-wrapper section .techno-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+@media all and (max-width: 804px) {
+  main #skills h2 {
+    text-align: center;
+  }
+  main #skills #skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  main #skills #skills-wrapper section {
+    width: 50%;
+  }
+  main #skills #skills-wrapper section:nth-child(2) {
+    margin: 5rem 0;
+  }
+}
+@media all and (max-width: 580px) {
+  main #skills #skills-wrapper section {
+    width: 100%;
+  }
+}
+main #experiences {
+  display: flex;
+  justify-content: space-around;
+}
+main #experiences section {
+  width: 30%;
+}
+main #experiences section h2 {
+  text-align: center;
+}
+main #experiences section > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main #experiences section > ul > li {
+  margin-bottom: 2rem;
+}
+main #experiences section > ul > li h3 {
+  display: block;
+  text-align: center;
+  background: #07678D;
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0 auto;
+  -webkit-box-shadow: 7px 7px 30px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 7px 7px 30px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 7px 7px 30px 0px rgba(50, 50, 50, 0.5);
+  font-size: 1.5rem;
+}
+main #experiences section > ul > li div {
+  padding: 1rem;
+}
+@media all and (max-width: 804px) {
+  main #experiences {
+    flex-direction: column;
+    align-items: center;
+  }
+  main #experiences section {
+    width: 50%;
+  }
+}
+@media all and (max-width: 580px) {
+  main #experiences section {
+    width: 100%;
+  }
+}
+@media all and (max-width: 1100px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background: #07678D;
+  margin-top: 2rem;
+}
+footer p {
+  color: white;
+}
+footer p a {
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */

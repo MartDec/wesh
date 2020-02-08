@@ -1,0 +1,19 @@
+/**
+	FONTS IMPORT
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro&display=swap');
+@import url('https://css.gg/c?=|server|template|terminal');
+
+/**
+	VARIABLES
+ */
+$blue: #07678D;
+$boxShadow:  7px 7px 30px 0px rgba(50, 50, 50, 0.5);
+
+/**
+	ATOMS IMPORT
+ */
+@import 'atoms/init';
+@import 'atoms/header';
+@import 'atoms/content';
+@import 'atoms/footer';
