@@ -36,7 +36,7 @@ header {
   height: 80vh;
   width: 100%;
   position: relative;
-  background-image: url("http://192.168.0.11:8080/img/background.jpg");
+  background-image: url("https://mdeclert.herokuapp.com/images/background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
