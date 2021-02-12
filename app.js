@@ -15,9 +15,7 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({
-  extended: false
-}));
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -25,6 +23,7 @@ app.get('/', (req, res) => res.redirect('/hello'));
 
 app.get('/hello', (req, res) => {
   res.render('index.ejs', {
+    title: 'Développeur web Back-end',
     content: 'home'
   });
 });
